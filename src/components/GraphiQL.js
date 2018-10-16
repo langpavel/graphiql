@@ -518,7 +518,7 @@ export class GraphiQL extends React.Component {
         } else {
           const responseString = typeof result === 'string'
             ? result
-            : JSON.stringify(result, null, 2);
+            : GraphiQL.formatResult(result);
           this.setState({
             // Set schema to `null` to explicitly indicate that no schema exists.
             schema: null,
@@ -632,7 +632,7 @@ export class GraphiQL extends React.Component {
           if (queryID === this._editorQueryID) {
             this.setState({
               isWaitingForResponse: false,
-              response: JSON.stringify(result, null, 2),
+              response: GraphiQL.formatResult(result),
             });
           }
         },
@@ -993,6 +993,10 @@ GraphiQL.Footer = function GraphiQLFooter(props) {
       {props.children}
     </div>
   );
+};
+
+GraphiQL.formatResult = function(result) {
+  return JSON.stringify(result, null, 2);
 };
 
 const defaultQuery = `# Welcome to GraphiQL
