@@ -1,6 +1,6 @@
 {
   "name": "@langpavel/graphiql",
-  "version": "0.12.1-patch3",
+  "version": "0.12.1-patch4",
   "description": "An graphical interactive in-browser GraphQL IDE.",
   "contributors": [
     "Hyohyeon Jeong <asiandrummer@fb.com>",
