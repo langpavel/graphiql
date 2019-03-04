@@ -9,7 +9,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import { buildClientSchema, GraphQLSchema, parse, print } from 'graphql';
-import GraphiQLExplorer from 'graphiql-explorer';
+import GraphiQLExplorer from './Explorer';
 
 import { ExecuteButton } from './ExecuteButton';
 import { ToolbarButton } from './ToolbarButton';

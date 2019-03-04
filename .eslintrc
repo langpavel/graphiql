@@ -1,7 +1,7 @@
 {
   "parser": "babel-eslint",
 
-  "plugins": ["babel", "react"],
+  "plugins": ["flowtype", "babel", "react"],
 
   "settings": {
     "react": {
@@ -15,7 +15,7 @@
     "node": true
   },
 
-  "extends": ["prettier"],
+  "extends": ["prettier", "plugin:flowtype/recommended"],
 
   "parserOptions": {
     "arrowFunctions": true,

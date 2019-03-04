@@ -3,7 +3,8 @@
 .*/dist/.*
 .*/coverage/.*
 .*/resources/.*
-.*/node_modules/.*
+.*/node_modules/module-deps/.*
+.*/node_modules/.*/node_modules/.*
 
 [include]
 
