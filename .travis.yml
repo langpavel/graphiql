@@ -11,7 +11,7 @@ deploy:
       secure: "V+fzdgEOZ+D5iw9YKP37YdvW8E3g8G7FtTSY8gMghv4ao3V1O98J+hJER9k/aiBShpY2EDceCmXjkfozR7SBN2WxN7+eG0Z4HFcc5s8Li/gshURgf44ZVSu6netTB01AnYS2ifoNwvkoFynwiHWLXvgaHXRVgUsttZisAkJ0bn+0/b2OLiZiBFRNzlTpv180rNGtcu6nc4I0cU0kXGxM7xtM3QqgoxYTuVOh/7HLENL0yXNLHH1qJ4ANs1mhlhsrSjuUOgFLfy3k19HP9zXg2BPt/h4XRFWTfk+wlD+HKGmiL6jBUrBqU3z9KXjtDfTPPulEYrzLMME1Szrb84Ii28TEB9vrVpazCZ2hh1fW0wfbZHMIA8c8VGDPYPGYdFJT/H2MSKYc7Fmf7EiqYc4VX3odFhPkYA0v1M7bWZuCM1+bsJ7/PwQrQby9tWUuAgnvx3FcO4fOE3wwECKXEi6DmEqSIeIzlwpMnixuuzW9eT23GhLegvUqn17zvQUGSa2OpUnwQxRLP973fOxZsq8DI5JvQW+bVUexx5JqbCGlh0gtP3yfCj4b9p+JINvTg5CQYrSpVEmm6zX/rlCDNvhvxgYoyKkHl9aO025/WRpgKwMit497T5Jete6WN4EbHHGLJVwcZzKIDygo6RJNul6iE6QRD/bjHrySObd9XJMdhag="
     on:
       tags: true
-      branch: langpavel
+      branch: the-gear
   - provider: releases
     skip_cleanup: true
     api_key:
@@ -22,4 +22,4 @@ deploy:
       - graphiql.css
     on:
       tags: true
-      branch: langpavel
+      branch: the-gear

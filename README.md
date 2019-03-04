@@ -1,11 +1,12 @@
-GraphiQL
-========
+⚙️ @the-gear/GraphiQL
+====================
+
+This is a fork of [graphql/graphiql](https://github.com/graphql/graphiql)
 
 */ˈɡrafək(ə)l/* A graphical interactive in-browser GraphQL IDE. [Try the live demo](http://graphql.org/swapi-graphql).
 
-[![Build Status](https://travis-ci.org/graphql/graphiql.svg?branch=master)](https://travis-ci.org/graphql/graphiql)
-[![CDNJS](https://img.shields.io/cdnjs/v/graphiql.svg)](https://cdnjs.com/libraries/graphiql)
-[![npm](https://img.shields.io/npm/v/graphiql.svg)](https://www.npmjs.com/package/graphiql)
+[![Build Status](https://travis-ci.com/the-gear/graphiql.svg?branch=the-gear)](https://travis-ci.com/the-gear/graphiql)
+[![npm](https://img.shields.io/npm/v/@the-gear/graphiql.svg)](https://www.npmjs.com/package/@the-gear/graphiql)
 
 [![](resources/graphiql.png)](http://graphql.org/swapi-graphql)
 
@@ -14,13 +15,13 @@ GraphiQL
 Using a node.js server? Just use [`express-graphql`](https://github.com/graphql/express-graphql)! It can automatically present GraphiQL. Using another GraphQL service? GraphiQL is pretty easy to set up. With `npm`:
 
 ```
-npm install --save graphiql
+npm install --save @the-gear/graphiql
 ```
 
 Alternatively, if you are using [`yarn`](https://yarnpkg.com/):
 
 ```
-yarn add graphiql
+yarn add @the-gear/graphiql
 ```
 
 GraphiQL provides a React component responsible for rendering the UI, which should be provided with a function for fetching from GraphQL, we recommend using the [fetch](https://fetch.spec.whatwg.org/) standard API.
@@ -28,7 +29,7 @@ GraphiQL provides a React component responsible for rendering the UI, which shou
 ```js
 import React from 'react';
 import ReactDOM from 'react-dom';
-import GraphiQL from 'graphiql';
+import GraphiQL from '@the-gear/graphiql';
 import fetch from 'isomorphic-fetch';
 
 function graphQLFetcher(graphQLParams) {
@@ -44,7 +45,7 @@ ReactDOM.render(<GraphiQL fetcher={graphQLFetcher} />, document.body);
 
 Build for the web with [webpack](https://webpack.js.org/) or [browserify](http://browserify.org/), or use the pre-bundled `graphiql.js` file. See the [example](./example) in the git repository to see how to use the pre-bundled file.
 
-Don't forget to include the CSS file on the page! If you're using `npm` or `yarn`, you can find it in `node_modules/graphiql/graphiql.css`, or you can download it from the [releases page](https://github.com/graphql/graphiql/releases).
+Don't forget to include the CSS file on the page! If you're using `npm` or `yarn`, you can find it in `node_modules/@the-gear/graphiql/graphiql.css`, or you can download it from the [releases page](https://github.com/@the-gear/graphiql/releases).
 
 For an example of setting up a GraphiQL, check out the [example](./example) in this repository which also includes a few useful features highlighting GraphiQL's API.
 
@@ -63,7 +64,7 @@ For an example of setting up a GraphiQL, check out the [example](./example) in t
 GraphiQL exports a single React component which is intended to encompass the entire browser viewport. This React component renders the GraphiQL editor.
 
 ```js
-import GraphiQL from 'graphiql';
+import GraphiQL from '@the-gear/graphiql';
 
 <GraphiQL />
 ```

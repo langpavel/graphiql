@@ -1,20 +1,25 @@
 {
-  "name": "@langpavel/graphiql",
+  "name": "@the-gear/graphiql",
   "version": "0.13.2",
   "description": "An graphical interactive in-browser GraphQL IDE.",
   "contributors": [
+    "Pavel Lang <langpavel+graphiql@the-gear.cz>",
     "Hyohyeon Jeong <asiandrummer@fb.com>",
     "Lee Byron <lee@leebyron.com> (http://leebyron.com/)"
   ],
-  "homepage": "https://github.com/graphql/graphiql",
+  "homepage": "https://github.com/the-gear/graphiql",
   "bugs": {
-    "url": "https://github.com/graphql/graphiql/issues"
+    "url": "https://github.com/the-gear/graphiql/issues"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/graphql/graphiql.git"
+    "url": "http://github.com/the-gear/graphiql.git"
   },
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "main": "dist/index.js",
   "files": [
     "dist",

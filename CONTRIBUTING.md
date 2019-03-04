@@ -4,7 +4,7 @@ Contributing to GraphiQL
 We want to make contributing to this project as easy and transparent as
 possible. Hopefully this document makes the process for contributing clear and
 answers any questions you may have. If not, feel free to open an
-[Issue](https://github.com/facebook/graphql/issues).
+[Issue](https://github.com/the-gear/graphiql/issues).
 
 ## Issues
 
@@ -66,12 +66,12 @@ Complete your CLA here: <https://code.facebook.com/cla>
 
 *Only core contributors may release to NPM.*
 
-To release a new version on NPM, first ensure you're on the `master` branch and
+To release a new version on NPM, first ensure you're on the `the-gear` branch and
 have recently run `git pull` and that all tests pass with `npm test`.
 Use `npm version patch|minor|major` in order to increment the version in
 package.json and tag and commit a release. Then `git push --follow-tags`
 this change so Travis CI can deploy to NPM. *Do not run `npm publish` directly.*
-Once published, add [release notes](https://github.com/graphql/graphql-js/tags).
+Once published, add [release notes](https://github.com/the-gear/graphiql/tags).
 Use [semver](http://semver.org/) to determine which version part to increment.
 
 Example for a patch release:
