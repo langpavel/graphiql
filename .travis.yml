@@ -6,20 +6,20 @@ cache: yarn
 deploy:
   - provider: npm
     skip_cleanup: true
-    email: agomezs@fb.com
+    email: langpavel@phpskelet.org
     api_key:
-      secure: uKXlFfrKz0uOcu1tIwfQOS8A4rpVu0fIfSFReIo1hWd2CujqKIt94KalsgxVLxQfhxePVepzBamHlGu0x9B9uqz7uFe+nzKQ4df1k/UGElv+vozIoxsTs70sZe/XHqhazraT3B/4G98LoDuP+3c6qBbq6vJvehGG+9q3btuYoXqeF1BAGDW6YNGoq/fDUHCwsyg7n1LIBCWtWKJTlbtk4ppMfPNIE10UYMmREzXaMzY+mShlBs0/SlWIRDen5JujgV0jeVVCOJPS+wsCKZ17gWoIRpJgCHCgPfiTuU05CC+KkSuQoCaCYEdH1np9wJhpuaFK9I8myAlMMwzBQf61TnsQKcP/RjU1padL88RGgzspT36CEGXXqGHLbAR48nmL95B7SN+ZfnAtwlBXvvyNvt6V+VVvv4sgQ9C7vvV2Uj3ebOlmbEz9+8SPCQ5LuRVzxmYunkt2WacrV2uEPHRmsges70VIBGhAz3D09gTAHvZJFaLPeQTMFswm/TxJzbkWWL/2uEulG71A6QAJNV+zYT8OfEg3dhjKqolgqwHoDmXU8im6za+5MRuyZ8NaJ1NJ3iJMTXfInrmCGDhhm8ufO2eH35/tDl2lBAluvBsr8cgw3Sdd4yYAoP/utiIuXlMMFvjMfo0cJsaqQ2MLY5zXb/n/xoUC0Q9hr3tzc8ZMkQo=
+      secure: "V+fzdgEOZ+D5iw9YKP37YdvW8E3g8G7FtTSY8gMghv4ao3V1O98J+hJER9k/aiBShpY2EDceCmXjkfozR7SBN2WxN7+eG0Z4HFcc5s8Li/gshURgf44ZVSu6netTB01AnYS2ifoNwvkoFynwiHWLXvgaHXRVgUsttZisAkJ0bn+0/b2OLiZiBFRNzlTpv180rNGtcu6nc4I0cU0kXGxM7xtM3QqgoxYTuVOh/7HLENL0yXNLHH1qJ4ANs1mhlhsrSjuUOgFLfy3k19HP9zXg2BPt/h4XRFWTfk+wlD+HKGmiL6jBUrBqU3z9KXjtDfTPPulEYrzLMME1Szrb84Ii28TEB9vrVpazCZ2hh1fW0wfbZHMIA8c8VGDPYPGYdFJT/H2MSKYc7Fmf7EiqYc4VX3odFhPkYA0v1M7bWZuCM1+bsJ7/PwQrQby9tWUuAgnvx3FcO4fOE3wwECKXEi6DmEqSIeIzlwpMnixuuzW9eT23GhLegvUqn17zvQUGSa2OpUnwQxRLP973fOxZsq8DI5JvQW+bVUexx5JqbCGlh0gtP3yfCj4b9p+JINvTg5CQYrSpVEmm6zX/rlCDNvhvxgYoyKkHl9aO025/WRpgKwMit497T5Jete6WN4EbHHGLJVwcZzKIDygo6RJNul6iE6QRD/bjHrySObd9XJMdhag="
     on:
       tags: true
-      branch: master
+      branch: langpavel
   - provider: releases
     skip_cleanup: true
     api_key:
-      secure: HzZELTrnObaY3L/Qf+sgxtzwZM8KpNNB3CzxHjkihIkl8bt2ibUgvPrArsUisyGI5WXiW6KMzyjDEmODjyT61InCUzXwdqtH7cpcYL1hLrCXUK1MH2yobesMlqcZiu1BdXgYPfhxA9BzA8aQmSmcnIj1+8nVh2ZRYcPE4Lct3eExzLKUr4hvDoGhfStEknLcuSaiICQXqVRQbnVclR/D5fZ77Nt/XdX6yTPd5+BqtEaLXM8rO1zCmD23QNrgHl9lOzIlc7hJ87TQ2t58f1l3nqxaDQieNGctM8ahrPHfYxKX2MZsuKgNEtBmsm+ldnaI2yKoFZNiBY4nEy35beqLROHihisxMo5+kw5L6f7aQ4YpI8lrmeWXUjHBIv9lpnuo8DVO2sBwhvywNhcHqLMX5wt6akh8HSdERpUxcA9cIPVY3vi3tGIJTxidxZUqFHM83Bvh54pss5Afi9HWodTIP+0/HtB7WdKBXH0F4CefuLDhy4aVb5tMo+bi1ENhjpdjl3o+VshkEYXOP2Ge8DAoatFqgXjrc/OQS+Ca7n/75dGwZVBGsX0Gg2Bp+zaWIp5xgqImclsBuk+879/tHUitxt4ZjkWH8E07voiU7WIrmw/BX/kQR3l5T1ROjjtJg1dGuRTSryjCzg+qx3ssXmf4szsaSgOTTPdMgI6HY5cJxEQ=
+      secure: "duCx0ggoWYEl4tjigJnTEZTiVqFAMrgdTYjNQTTiKMVCzOf2w5iRe2v7wqGsUXyOnseV013eUz6+aheH0Sb+c8UvMaQ1Z1F0EybuBzK7J5eLTdsI8rpEZH7JLJxrJgGwXt+YdH3Epa0efvy/bSzGFqQfoz44uym+dGspvqQ+LdRMSL6p6PFKef61ZEwMIyGQy1S1c9jNdOhQOW7MVFJ2n66ka88NhDjyGNR2T+TErC0BIHyxKJToGuHs9BN3+QTeWLxXJh0Lv+o7vrFPYAKeKo1P5qQR4fNUNrewRuzzRW3ZBO5bdYBTOnd9Q/o0oHsyQmIAFv7kYduGx3umDyQfFA6reVP3aqkVzeFVeY76hcJavsIJL9qtQTh8NAXfhdb7M8tJnd3+4Sq0Lvu5lS25jTVZ8nWW17Dji476X00goppysUbeq/qOOPRbhAovbMhY3xdd2oWtXAO0RG54o8phpckl6UwweQBlU9cQ3a9khyEN1xyO+DTuQW0LG6KKTJL/2zcC1jtWRTqkkjkQiPN6y/bFu58c2EzeAXoLixMWwFFTQQuCqwIS0YNF1yiA2COJpVgL7sv8rXGi/OCdeluEau90/8bhO80k/aFYkgFm5Emv3Nz8W/6us38XaYuc3HnH7zlQ6BZ+xQENOmIZOqeJ1WbD0JO9l2Hi1PXAJgkEOmI="
     file:
       - graphiql.js
       - graphiql.min.js
       - graphiql.css
     on:
       tags: true
-      branch: master
+      branch: langpavel
