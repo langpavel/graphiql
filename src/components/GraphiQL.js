@@ -9,6 +9,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import { buildClientSchema, GraphQLSchema, parse, print } from 'graphql';
+import GraphiQLExplorer from 'graphiql-explorer';
 
 import { ExecuteButton } from './ExecuteButton';
 import { ToolbarButton } from './ToolbarButton';
@@ -63,6 +64,7 @@ export class GraphiQL extends React.Component {
     getDefaultFieldNames: PropTypes.func,
     editorTheme: PropTypes.string,
     onToggleHistory: PropTypes.func,
+    onToggleExplorer: PropTypes.func,
     ResultsTooltip: PropTypes.any,
   };
 
@@ -118,6 +120,8 @@ export class GraphiQL extends React.Component {
       variableEditorHeight:
         Number(this._storage.get('variableEditorHeight')) || 200,
       docExplorerOpen: this._storage.get('docExplorerOpen') === 'true' || false,
+      explorerPaneOpen:
+        this._storage.get('explorerPaneOpen') === 'true' || false,
       historyPaneOpen: this._storage.get('historyPaneOpen') === 'true' || false,
       docExplorerWidth:
         Number(this._storage.get('docExplorerWidth')) ||
@@ -238,6 +242,7 @@ export class GraphiQL extends React.Component {
     this._storage.set('variableEditorHeight', this.state.variableEditorHeight);
     this._storage.set('docExplorerWidth', this.state.docExplorerWidth);
     this._storage.set('docExplorerOpen', this.state.docExplorerOpen);
+    this._storage.set('explorerPaneOpen', this.state.explorerPaneOpen);
     this._storage.set('historyPaneOpen', this.state.historyPaneOpen);
   }
 
@@ -267,6 +272,11 @@ export class GraphiQL extends React.Component {
           onClick={this.handleToggleHistory}
           title="Show History"
           label="History"
+        />
+        <ToolbarButton
+          onClick={this.handleToggleExplorer}
+          title="Show Explorer"
+          label="Explorer"
         />
       </GraphiQL.Toolbar>
     );
@@ -312,6 +322,13 @@ export class GraphiQL extends React.Component {
             </div>
           </QueryHistory>
         </div>
+        <GraphiQLExplorer
+          schema={this.state.schema}
+          query={this.state.query}
+          onEdit={this.handleEditQuery}
+          explorerIsOpen={this.state.explorerPaneOpen}
+          onToggleExplorer={this.handleToggleExplorer}
+        />
         <div className="editorWrap">
           <div className="topBarWrap">
             <div className="topBar">
@@ -818,6 +835,13 @@ export class GraphiQL extends React.Component {
       this.props.onToggleHistory(!this.state.historyPaneOpen);
     }
     this.setState({ historyPaneOpen: !this.state.historyPaneOpen });
+  };
+
+  handleToggleExplorer = () => {
+    if (typeof this.props.onToggleExplorer === 'function') {
+      this.props.onToggleExplorer(!this.state.explorerPaneOpen);
+    }
+    this.setState({ explorerPaneOpen: !this.state.explorerPaneOpen });
   };
 
   handleSelectHistoryQuery = (query, variables, operationName) => {
