@@ -55,7 +55,6 @@
     "react/prefer-stateless-function": 2,
     "react/prop-types": [2, { "ignore": ["children"] }],
     "react/react-in-jsx-scope": 2,
-    "react/self-closing-comp": 2,
     "react/sort-comp": [
       2,
       {
@@ -92,7 +91,6 @@
     "id-match": [2, "^(?:_?[a-zA-Z0-9]*)|[_A-Z0-9]+$"],
     "indent": 0,
     "init-declarations": 0,
-    "linebreak-style": 2,
     "lines-around-comment": 0,
     "max-depth": 0,
     "max-nested-callbacks": 0,
@@ -182,7 +180,6 @@
     "no-undef-init": 2,
     "no-undefined": 0,
     "no-underscore-dangle": 0,
-    "no-unexpected-multiline": 2,
     "no-unneeded-ternary": 2,
     "no-unreachable": 2,
     "no-unused-expressions": 2,
@@ -203,7 +200,6 @@
     "prefer-const": 2,
     "prefer-reflect": 0,
     "prefer-spread": 0,
-    "quotes": [2, "single", { "avoidEscape": true }],
     "radix": 2,
     "require-yield": 2,
     "sort-vars": 0,
